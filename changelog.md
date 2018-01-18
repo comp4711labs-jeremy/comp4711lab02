@@ -8,6 +8,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.0.4] - 2018-01-18
+### Added
+- Added working hyperlink to images in /application/views/homepage.php 
+- Added supporting show() function to bring user to new page in /application/controllers/Welcome.php
+
+### Changed
+- Changed Welcome.php to accept arrays
+- Changelog updated
+
 ## [0.0.3] - 2018-01-18
 ### Added
 - Added tooltip in /application/views/homepage.php 
