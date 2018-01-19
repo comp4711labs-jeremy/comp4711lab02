@@ -27,4 +27,26 @@ class Welcome extends Application
 		$this->render();
 	}
 
+	 /**
+     * Show just one actor
+     */
+    public function show($key)
+    {
+            // works with actor.php
+            // this is the view we want shown
+            $this->data['pagebody'] = 'actor';
+
+            // build the list of authors, to pass on to our view
+            $source = $this->quotes->get($key);
+
+            // works with homepage.php 
+            // pass on the data to present, as the "authors" view parameter
+            // $this->data['authors'] = $source;
+
+            // works with actor.php
+            // pass on the data to present, adding the author record's fields
+			$this->data = array_merge($this->data, (array) $source);
+            
+            $this->render();
+    }
 }
